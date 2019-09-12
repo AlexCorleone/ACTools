@@ -22,6 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage *)AC_resizeWithImage:(UIImage*)imgage newSize:(CGSize)newSize;
 
+/*!
+ * @brief 获取图片中心centerSize大小的图片
+ */
++ (UIImage *)AC_centerImageWithImage:(UIImage *)image centerSize:(CGSize)centerSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

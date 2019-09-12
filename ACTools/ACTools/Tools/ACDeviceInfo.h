@@ -13,143 +13,144 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ACDeviceInfo : NSObject
 
-/*
- * <#release Content#>
+/*!
+ * @brief APP名称
  */
 + (NSString *)applicationDisplayName;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 当前版本号
  */
 + (NSString *)applicationVersion;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 系统版本 e.g. @"4.0"
+ * 
  */
 + (NSString *)phoneSystemVersion;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 系统名称 e.g. @"iOS"
  */
 + (NSString *)phoneSystemName;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 系统首选语言
  */
 + (NSString *)systemPreferredLanguage;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 手机类型 e.g. @"iPhone", @"iPod touch"
  */
 + (NSString *)phoneModel;
 
-/*
- * 广告标识符
+/*!
+ * @brief 广告标识符
  */
 + (NSString *)advertisingIdentifier;
 
-/*
- * 供应商标识符
+/*!
+ * @brief 供应商标识符
  */
 + (NSString *)identifierForVendor;
 
-/*
- * <#release Content#>
+/*!
+ *  @brief 网络运营商
  */
 + (NSString *)telephonyCarrier;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 移动城市码
  */
 + (NSString *)mobileCountryCode;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 移动网络码
  */
 + (NSString *)mobileNetworkCode;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 电池电量
  */
 + (CGFloat)batteryLevel;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 设备IP地址
  */
 + (NSString *)deviceIpAddress;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 本地wifiIP地址
  */
 + (NSString *)localWifiIpAddress;
 
-/*
- * <#release Content#>
+/*!
+ * @brief wifi名称
  */
 + (NSString *)wifiName;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 总物理内存
  */
 + (long long)totalMemorySize;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 总物理内存字符串 单位、KB、MB、GB
  */
 + (NSString *)totalMemorySizeString;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 可用物理内存
  */
 + (long long)availableMemorySize;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 可用物理内存字符串 单位、KB、MB、GB
  */
 + (NSString *)availableMemorySizeString;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 总磁盘大小
  */
 + (long long)totalDiskSize;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 总磁盘大小 单位、KB、MB、GB
  */
 + (NSString *)totalDiskSizeString;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 可用磁盘大小
  */
 + (long long)availableDiskSize;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 可用磁盘大小 单位、KB、MB、GB
  */
 + (NSString *)availableDiskSizeString;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 是否越狱
  */
 + (BOOL)isJailbrokenDevice;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 屏幕亮度 0 .. 1.0,
  */
 + (CGFloat)brightness;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 网络类型 2G、3G、4G
  */
 + (NSString *)networkType;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 设备型号 iphone5、 iphone7、  ....
  */
 + (NSString *)deviceName;
 
-/*
- * <#release Content#>
+/*!
+ * @brief 本地城市编码
  */
 + (NSString *)localCountryCode;
 

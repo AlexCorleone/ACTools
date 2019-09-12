@@ -38,4 +38,29 @@
     return newImage;
 }
 
++ (UIImage *)AC_centerImageWithImage:(UIImage *)image centerSize:(CGSize)centerSize {
+    CGSize imageSize = image.size;
+    CGRect rect;
+    if (imageSize.width > imageSize.height) {
+        float leftMargin = (imageSize.width - imageSize.height) * 0.5;
+        rect = CGRectMake(leftMargin, 0, imageSize.height, imageSize.height);
+    }else{
+        float topMargin = (imageSize.height - imageSize.width) * 0.5;
+        rect = CGRectMake(0, topMargin, imageSize.width, imageSize.width);
+    }
+    CGImageRef imageRef = image.CGImage;
+    
+    CGImageRef imageRefRect = CGImageCreateWithImageInRect(imageRef, rect);
+    UIImage *tmp = [[UIImage alloc] initWithCGImage:imageRefRect];
+    CGImageRelease(imageRefRect);
+    UIGraphicsBeginImageContext(centerSize);
+    CGRect rectDraw = CGRectMake(0, 0, centerSize.width, centerSize.height);
+    [tmp drawInRect:rectDraw];
+    
+    tmp = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return tmp;
+}
+
 @end

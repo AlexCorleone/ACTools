@@ -12,8 +12,14 @@
 #import "NSDate+ACDate.h"
 #import "UIColor+ACColor.h"
 #import "ACFileManager.h"
+#import "ACZoomImageView.h"
+#import "ACLogoAnimationView.h"
+#import "ACWangYiMusicAnimationView.h"
 
 @interface ACViewController ()
+
+/** <#注释#> */
+@property (nonatomic,strong) ACZoomImageView *zoomImageView;
 
 @end
 
@@ -57,8 +63,37 @@
     NSLog(@"偏移年份后的日期:%@", [NSDate AC_stringWithDate:[NSDate AC_offsetYearsDateWithDate:date offset:-7]
                                              format:kDateFormatter_AC_YMDHMS]);
 
+    [self.view addSubview:self.self.zoomImageView];
+    
+    //TODO:Alex -> Alex测试Logo动画
+//    CGFloat logoX = 20;
+//    CGFloat logoY = 20;
+//    ACLogoAnimationView *animationLogo = [[ACLogoAnimationView alloc] initWithFrame:CGRectMake(logoX, logoY , 67, 67)];
+//    animationLogo.layer.cornerRadius = 14;
+//    animationLogo.clipsToBounds = YES;
+//    [self.view addSubview:animationLogo];
+//    [animationLogo startAnimation];
+    //TODO:Alex -> END
+
+    //TODO:Alex -> Alex测试网易云动画
+//    ACWangYiMusicAnimationView *wangYiAnimation = [[ACWangYiMusicAnimationView alloc] init];
+//    [wangYiAnimation setFrame:CGRectMake((UIScreen.mainScreen.bounds.size.width - 300) / 2.0, 100, 300, 300)];
+//    [self.view addSubview:wangYiAnimation];
+//    [wangYiAnimation startMusicAnimation];
+    //TODO:Alex -> END
     
 }
 
 
+#pragma mark - Setter && Getter
+
+- (ACZoomImageView *)zoomImageView {
+    if (!_zoomImageView) {
+        CGRect imageFrame = CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height);
+        self.zoomImageView = [[ACZoomImageView alloc] init];
+        _zoomImageView.image = [UIImage imageNamed:@"zoom_image"];
+        _zoomImageView.frame = imageFrame;
+    }
+    return _zoomImageView;
+}
 @end

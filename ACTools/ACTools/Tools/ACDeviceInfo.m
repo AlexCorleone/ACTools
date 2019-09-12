@@ -79,11 +79,11 @@ NS_INLINE UIDevice * _currentDevice (void) {
     CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc]init];
     NSDictionary <NSString *, CTCarrier *> *providers = [networkInfo serviceSubscriberCellularProviders];
     if (providers.allKeys.count == 0) {
-        return @"没有SIM卡--无运营商";
+        return nil;
     }
     CTCarrier *carrier = providers[providers.allKeys.firstObject];
     if (!carrier.isoCountryCode) {
-        return @"没有SIM卡--无运营商";
+        return nil;
     }
     return [carrier carrierName];
 }
@@ -92,11 +92,11 @@ NS_INLINE UIDevice * _currentDevice (void) {
     CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc]init];
     NSDictionary <NSString *, CTCarrier *> *providers = [networkInfo serviceSubscriberCellularProviders];
     if (providers.allKeys.count == 0) {
-        return @"没有SIM卡--无运营商";
+        return nil;
     }
     CTCarrier *carrier = providers[providers.allKeys.firstObject];
     if (!carrier.isoCountryCode) {
-        return @"没有SIM卡--无运营商";
+        return nil;
     }
     return [carrier mobileCountryCode];
 }
@@ -106,11 +106,11 @@ NS_INLINE UIDevice * _currentDevice (void) {
     NSDictionary <NSString *, CTCarrier *> *providers = [networkInfo serviceSubscriberCellularProviders];
     
     if (providers.allKeys.count == 0) {
-        return @"没有SIM卡--无运营商";
+        return nil;
     }
     CTCarrier *carrier = providers[providers.allKeys.firstObject];
     if (!carrier.isoCountryCode) {
-        return @"没有SIM卡--无运营商";
+        return nil;
     }
     return [carrier mobileNetworkCode];
 }
@@ -186,7 +186,7 @@ NS_INLINE UIDevice * _currentDevice (void) {
 }
 
 + (NSString *)wifiName {
-    NSString *wifiName = @"Not Found";
+    NSString *wifiName = nil;
     CFArrayRef myArray = CNCopySupportedInterfaces();
     if (myArray != nil) {
         CFDictionaryRef myDict =CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(myArray, 0));

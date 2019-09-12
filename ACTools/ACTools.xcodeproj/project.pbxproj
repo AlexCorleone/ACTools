@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1978360F2329D8EF00E4AD54 /* ACWangYiMusicAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1978360D2329D8EF00E4AD54 /* ACWangYiMusicAnimationView.m */; };
+		197836122329D8F900E4AD54 /* ACLogoAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 197836112329D8F900E4AD54 /* ACLogoAnimationView.m */; };
 		19BF99A822E6B05D008040A0 /* ACAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BF99A722E6B05D008040A0 /* ACAppDelegate.m */; };
 		19BF99AB22E6B05D008040A0 /* ACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BF99AA22E6B05D008040A0 /* ACViewController.m */; };
 		19BF99AE22E6B05D008040A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19BF99AC22E6B05D008040A0 /* Main.storyboard */; };
@@ -23,11 +25,16 @@
 		19BF99D822E6EB38008040A0 /* ACDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BF99D722E6EB38008040A0 /* ACDeviceInfo.m */; };
 		19BF99DC22E721EB008040A0 /* ACSecurityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BF99DB22E721EB008040A0 /* ACSecurityManager.m */; };
 		19BF99E822E724C1008040A0 /* ACBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BF99E722E724C1008040A0 /* ACBase64.m */; };
+		19BFE9FB22FBF46F00E3D976 /* ACZoomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BFE9FA22FBF46F00E3D976 /* ACZoomImageView.m */; };
 		962D61D836B31C113E161ACE /* libPods-ACTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 699C7BAA88AFB1D5DDAC2AFB /* libPods-ACTools.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0335ADF201DF108E88F7DB3B /* Pods-ACTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACTools/Pods-ACTools.release.xcconfig"; sourceTree = "<group>"; };
+		1978360D2329D8EF00E4AD54 /* ACWangYiMusicAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACWangYiMusicAnimationView.m; sourceTree = "<group>"; };
+		1978360E2329D8EF00E4AD54 /* ACWangYiMusicAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACWangYiMusicAnimationView.h; sourceTree = "<group>"; };
+		197836102329D8F900E4AD54 /* ACLogoAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACLogoAnimationView.h; sourceTree = "<group>"; };
+		197836112329D8F900E4AD54 /* ACLogoAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACLogoAnimationView.m; sourceTree = "<group>"; };
 		19BF99A322E6B05D008040A0 /* ACTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19BF99A622E6B05D008040A0 /* ACAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACAppDelegate.h; sourceTree = "<group>"; };
 		19BF99A722E6B05D008040A0 /* ACAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACAppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +65,8 @@
 		19BF99DB22E721EB008040A0 /* ACSecurityManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACSecurityManager.m; sourceTree = "<group>"; };
 		19BF99E622E724C1008040A0 /* ACBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACBase64.h; sourceTree = "<group>"; };
 		19BF99E722E724C1008040A0 /* ACBase64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACBase64.m; sourceTree = "<group>"; };
+		19BFE9F922FBF46F00E3D976 /* ACZoomImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACZoomImageView.h; sourceTree = "<group>"; };
+		19BFE9FA22FBF46F00E3D976 /* ACZoomImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACZoomImageView.m; sourceTree = "<group>"; };
 		699C7BAA88AFB1D5DDAC2AFB /* libPods-ACTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ACTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC889F8562606643722AA901 /* Pods-ACTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACTools/Pods-ACTools.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +117,10 @@
 				19BF99A722E6B05D008040A0 /* ACAppDelegate.m */,
 				19BF99A922E6B05D008040A0 /* ACViewController.h */,
 				19BF99AA22E6B05D008040A0 /* ACViewController.m */,
+				197836102329D8F900E4AD54 /* ACLogoAnimationView.h */,
+				197836112329D8F900E4AD54 /* ACLogoAnimationView.m */,
+				1978360E2329D8EF00E4AD54 /* ACWangYiMusicAnimationView.h */,
+				1978360D2329D8EF00E4AD54 /* ACWangYiMusicAnimationView.m */,
 				19BF99AC22E6B05D008040A0 /* Main.storyboard */,
 				19BF99AF22E6B065008040A0 /* Assets.xcassets */,
 				19BF99B122E6B065008040A0 /* LaunchScreen.storyboard */,
@@ -131,6 +144,8 @@
 				19BF99D722E6EB38008040A0 /* ACDeviceInfo.m */,
 				19BF99D322E6D663008040A0 /* ACFileManager.h */,
 				19BF99D422E6D663008040A0 /* ACFileManager.m */,
+				19BFE9F922FBF46F00E3D976 /* ACZoomImageView.h */,
+				19BFE9FA22FBF46F00E3D976 /* ACZoomImageView.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -267,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				19BF99AB22E6B05D008040A0 /* ACViewController.m in Sources */,
+				1978360F2329D8EF00E4AD54 /* ACWangYiMusicAnimationView.m in Sources */,
 				19BF99D222E6B3F9008040A0 /* UIImage+ACImage.m in Sources */,
+				197836122329D8F900E4AD54 /* ACLogoAnimationView.m in Sources */,
 				19BF99CF22E6B3B4008040A0 /* ACKeychainManager.m in Sources */,
 				19BF99CC22E6B2EF008040A0 /* NSString+ACString.m in Sources */,
 				19BF99C622E6B293008040A0 /* NSDate+ACDate.m in Sources */,
@@ -275,6 +292,7 @@
 				19BF99B622E6B065008040A0 /* main.m in Sources */,
 				19BF99D822E6EB38008040A0 /* ACDeviceInfo.m in Sources */,
 				19BF99C322E6B276008040A0 /* UIColor+ACColor.m in Sources */,
+				19BFE9FB22FBF46F00E3D976 /* ACZoomImageView.m in Sources */,
 				19BF99DC22E721EB008040A0 /* ACSecurityManager.m in Sources */,
 				19BF99E822E724C1008040A0 /* ACBase64.m in Sources */,
 				19BF99C922E6B2D8008040A0 /* NSURL+ACURL.m in Sources */,
